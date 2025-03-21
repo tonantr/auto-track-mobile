@@ -66,10 +66,7 @@ const styles = StyleSheet.create({
     padding: 12,
     backgroundColor: 'white',
     borderRadius: 8,
-    shadowColor: '#000',
-    shadowOpacity: 0.1,
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 4,
+    boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
     elevation: 3,
   },
   sectionTitle: {

@@ -3,7 +3,7 @@ import axios from 'axios';
 import { StyleSheet, TextInput, Button, View, Text, Platform, Dimensions } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
-import { BASE_URL } from '../config';
+import { BASE_URL } from '../config'; 
 
 
 const { width: screenWidth } = Dimensions.get('window');
@@ -24,6 +24,8 @@ export default function HomeScreen() {
             "Content-Type": "application/json",
           },
         });
+      
+      console.log(response.data)
 
       if (response.status === 200 && response.data.access_token) {
         setError('');
